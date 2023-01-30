@@ -1,8 +1,7 @@
 # BNO055
 Repository for BNO055 IMU customized for EW309
 
-
-
+```
 #include "mbed.h"
 #include "BNO055/BNO055.h"
 
@@ -28,3 +27,4 @@ int main()
         ThisThread::sleep_for(BLINKING_RATE);
     }
 }
+```
