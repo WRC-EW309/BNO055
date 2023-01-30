@@ -23,7 +23,7 @@ int main()
         led = !led;
         imu.get_angles();
         imu.get_gyro();
-        printf("%f,%f,%f,%f,%f,%f\n\r",imu.euler.pitch,imu.euler.yaw,imu.gyro.y,imu.gyro.z);
+        printf("%f,%f,%f,%f\n\r",imu.euler.pitch,imu.euler.yaw,imu.gyro.y,imu.gyro.z);
         ThisThread::sleep_for(BLINKING_RATE);
     }
 }
