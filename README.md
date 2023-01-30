@@ -1,6 +1,23 @@
 # BNO055
 Repository for BNO055 IMU customized for EW309
 
+Note to properly use this example program you must first enable floating point print by adding a file
+mbed_app.json in your main directory with the following content
+```
+{
+    "target_overrides": {
+        "*": {
+            "target.printf_lib": "minimal-printf",
+            "platform.minimal-printf-enable-floating-point": true,
+            "platform.minimal-printf-set-floating-point-max-decimals": 6,
+            "platform.minimal-printf-enable-64-bit": false,
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-convert-newlines": true
+        }
+    }
+}
+```
+
 ```
 #include "mbed.h"
 #include "BNO055/BNO055.h"
