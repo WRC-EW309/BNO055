@@ -20,7 +20,7 @@ mbed_app.json in your main directory with the following content
 
 ```
 #include "mbed.h"
-#include "BNO055/BNO055.h"
+#include "bno055/BNO055.h"
 
 // Blinking rate in milliseconds
 #define BLINKING_RATE     50ms
