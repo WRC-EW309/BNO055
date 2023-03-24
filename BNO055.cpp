@@ -72,7 +72,7 @@ void BNO055::set_anglerate_units(char units){
         }
     else {
         rx = rx | units;
-        rate_scale = 1.0f/900.0f;
+        rate_scale = 1.0f/916.3f;
         }
     writechar(BNO055_UNIT_SEL_ADDR,rx);
 }    
@@ -85,7 +85,7 @@ void BNO055::set_angle_units(char units){
         }
     else {
         rx = rx | units;
-        angle_scale = 1.0f/900.0f;
+        angle_scale = 1.0f/916.3f;
         }
     writechar(BNO055_UNIT_SEL_ADDR,rx);
 }    
